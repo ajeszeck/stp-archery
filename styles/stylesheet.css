@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+
+}
+
+header {
+  background-color: rgb(64, 65, 30);
+  color: rgb(120, 119, 70);
+  height: 20vh;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: block;
+}
+
+.headernav li {
+  align-items: center;
+}
+
+body {
+  background-color: rgb(216, 202, 168);
+
+
+}
+
+.centercontent {
+  display: inline-flex;
+  text-wrap: wrap;
+}
+
+footer {
+  background-color: rgb(64, 65, 30);
+  position: absolute;
+  margin-bottom: 0;
+  display: flex;
+
+}
