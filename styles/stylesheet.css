@@ -5,25 +5,40 @@
 html {
   font-family: 'Oswald', sans-serif;
   position: absolute;
-
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   background-color: rgb(64, 65, 30);
   color: rgb(120, 119, 70);
-  height: 20vh;
+  height: 15rem;
+  margin: 0;
+  padding: 1.5rem;
 
 }
 
-ul {
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+
+}
+.headernav {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.navimg {
+  border-radius: 50%;
+}
+
 nav {
   display: block;
+  position: relative;
+  top: -6rem;
 }
 
 .headernav li {
@@ -32,19 +47,54 @@ nav {
 
 body {
   background-color: rgb(216, 202, 168);
-
+  margin: 0;
+  top: 0;
+  left: 0;
 
 }
 
+.homepageblurbs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facility, .missionstatement, .contactinfo {
+  width: 30%;
+  background-color: rgb(120, 119, 70);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(64, 65, 30);
+  text-align: center;
+}
+
 .centercontent {
-  display: inline-flex;
-  text-wrap: wrap;
+  display: flex;
+  text-wrap: nowrap;
+  position: relative;
+  flex-direction: column;
+  line-height: normal;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.contactinfo .contact {
+  list-style: none;
+  line-height: normal;
 }
 
 footer {
   background-color: rgb(64, 65, 30);
-  position: absolute;
-  margin-bottom: 0;
+  bottom: 0s;
   display: flex;
+  justify-content: center;
+  height: 20vh;
+  align-items: center;
+}
 
+.disclaimer {
+  font-size: 0.5rem;
+  width: 25%;
+  text-align: center;
+  color: rgb(216, 202, 168);
 }
