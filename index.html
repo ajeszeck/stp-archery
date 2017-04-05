@@ -4,31 +4,47 @@
     <meta charset="utf-8" lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STP Archery School</title>
+    <script src="https://use.fontawesome.com/9d9d723649.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
   </head>
   <body>
     <header>
-      <h1>STRAIGHT TO THE POINT ARCHERY</h1>
+      <!-- <div class="row">
+        <ul class="socialheader">
+          <li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></li>
+          <li><i class="fa fa-envelope-square" aria-hidden="true"></i></li>
+          <li></li>
+        </ul>
+      </div> -->
+      <div class="row">
+        <h1 class="col-lg-12 justify-content-center">STRAIGHT TO THE POINT ARCHERY</h1>
+      </div>
     </header>
-    <nav>
+    <nav class="row">
       <ul class="headernav">
-        <li><a href="about.html"><img class="navimg" src="./images/stp-navbutton-about.jpg" width="100" alt=""></a></li>
-        <li><a href="#"><img class="navimg" src="./images/stp-navbutton-instructors.jpg" width="100" alt=""></a></li>
-        <li class="homelogo"><a href="#"><img class="navimg" src="./images/logo.jpg" width="150" alt=""></a></li>
-        <li><a href="#"><img class="navimg" src="./images/stp-navbutton-classes.jpg" width="100" alt=""></a></li>
-        <li><a href="#"><img class="navimg" src="./images/stp-navbutton-schedule.jpg" width="100" alt=""></a></li>
+        <li><a href="about.html"><img class="navimg" src="./images/STP-navbutton-about.jpg" width="100" alt=""></a></li>
+        <li><a href="#"><img class="navimg" src="./images/STP-navbutton-instructors.jpg" width="100" alt=""></a></li>
+        <li class="homelogo"><a href="#"><img class="navimg" src="./images/STP-logo.jpg" width="150" alt=""></a></li>
+        <li><a href="#"><img class="navimg" src="./images/STP-navbutton-classes.jpg" width="100" alt=""></a></li>
+        <li><a href="#"><img class="navimg" src="./images/STP-navbutton-schedule.jpg" width="100" alt=""></a></li>
       </ul>
     </nav>
     <div class="centercontent">
-      <section class="homepageimages">
-        <img src="http://placehold.it/275x150" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </section>
-      <section class="homepageblurbs">
-        <div class="facility">
+      <div class="homepageimages row">
+        <img class="col-lg-4 col-xs-4 img-responsive" src="/images/students-competing.jpg" alt="">
+        <img class="col-lg-4 col-xs-4 img-responsive" src="/images/archerygroup.jpg" alt="">
+        <img class="col-lg-4 col-xs-4 img-responsive" src="/images/archer-group.jpg" alt="">
+      </div>
+
+      <div class="homepageblurbs row justify-content-between">
+        <div class="facility col-md-4 col-lg-4">
           <p>
             Straight to the Point Archery is an indoor training facility with 28
             shooting (14 ten-yard lanes and 14 twenty-yard lanes) and two private coaching rooms.<br>
@@ -36,11 +52,12 @@
             field.
           </p>
         </div>
-        <div class="missionstatement">
-          <p>We are dedicated to teaching valuable life skills to the youth in our community
-            through the wonderful discipline of archery.</p>
+        <div class="missionstatement col-md-4 col-lg-4">
+          <p>"We are dedicated to teaching valuable life skills to the youth in our community
+            through the wonderful discipline of archery." <br> —Giap Nguyen</p>
+          <p class="owner">Owner and founder of Straight to the Point Archery</p>
         </div>
-        <div class="contactinfo">
+        <div class="contactinfo col-md-4 col-lg-4">
           <ul class="contact">
             <li>528 Nock Point Ln<br>
               Tacoma, WA 98412</li>
@@ -48,19 +65,48 @@
             <li>(253) 555-1010</li>
           </ul>
         </div>
-      </section>
-    </div>
-    <footer>
-      <nav>
-
-      </nav>
-      <div class="disclaimer">
-        <p>Straight to the Point Archery admits students of any race, gender presentation, sexuality, religion, national origin
-          or ethnic origin to all rights, privileges, programs and activities available to students at the school.
-          We do not discriminate in administration of our educational policies, admission policies and other school
-          administered programs. All students are welcome and valuable members of our community.
-        </p>
       </div>
+    </div>
+    <footer class="row">
+
+
+          <nav class="footernav col-lg-3">
+            <ul class="footernav">
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="#">INSTRUCTORS</a></li>
+              <li><a href="#">CLASSES</a></li>
+              <li><a href="#">SCHEDULE</a></li>
+            </ul>
+          </nav>
+          <div class="col-lg-6">
+          </div>
+          <nav class="social col-lg-3">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+      
+        <div class="row">
+          <div class="col-lg-4">
+          </div>
+          <div class="disclaimer col-lg-4">
+            <p>Straight to the Point Archery admits students of any race, gender presentation, sexuality, religion, national origin
+              or ethnic origin to all rights, privileges, programs and activities available to students at the school.
+              We do not discriminate in administration of our educational policies, admission policies and other school
+              administered programs. <br>All students are welcome and valuable members of our community.
+            </p>
+          </div>
+          <div class="col-lg-4">
+          </div>
+        </div>
+
     </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
