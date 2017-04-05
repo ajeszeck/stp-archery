@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
 }
 
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 header {
   background-color: rgb(64, 65, 30);
   color: rgb(120, 119, 70);
@@ -24,6 +29,8 @@ header h1 {
   text-align: center;
 
 }
+
+
 .headernav {
   list-style: none;
   display: flex;
@@ -45,12 +52,6 @@ nav {
   align-items: center;
 }
 
-/*.socialheader {
-  list-style: none;
-  display: inline-block;
-
-}*/
-
 body {
   font-family: 'Oswald', sans-serif;
   background-color: rgb(216, 202, 168);
@@ -64,7 +65,7 @@ img.col-lg-4 {
   border-radius: 5%;
   margin-bottom: 4rem;
 }
-.facility, .missionstatement, .contactinfo {
+.facility, .missionstatement, .partnershipinfo {
   display: flex;
   background-color: rgb(120, 119, 70);
   margin-bottom: 1.5rem;
@@ -78,7 +79,7 @@ img.col-lg-4 {
   margin-top: 1rem;
 }
 
-.facility, .contactinfo {
+.facility, .partnershipinfo {
   background-color: rgb(64, 65, 30);
   color: rgb(120, 119, 70);
 
@@ -98,28 +99,21 @@ img.col-lg-4 {
   color: rgb(64, 65, 30);
 }
 
-
-}
 .row {
   padding: 1rem 1rem 1rem 1rem;
 
 }
 
-/*.centercontent {
-  display: flex;
-  flex-wrap: nowrap;
-  position: relative;
-  flex-direction: column;
-  line-height: normal;
-  align-items: center;
-  justify-content: space-around;
-
-}*/
-
-.contactinfo .contact {
+.partnershipinfo .partnerships {
   list-style: none;
   line-height: normal;
   text-wrap: wrap;
+}
+
+.partnerships li:first-child {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 footer {
@@ -130,16 +124,43 @@ footer {
   height: 25rem;
 }
 
-.footernav {
+ul.footernav {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  color: rgb(216, 202, 168);
+  padding-top: 4rem;
 }
 
-.footernav .navimg {
-  border-radius: 50%;
+.footernav a {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 10%;
+  margin-right: 1rem;
+
+}
+.footernav a:visited {
+  color: rgb(216, 202, 168);
+}
+
+.footernav a:hover {
+  color: #C03A2A;
+  text-decoration: none;
+}
+
+ul.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+.contact li{
+  list-style: none;
+  line-height: normal;
+  text-wrap: wrap;
+  font-weight: bolder;
+  color: rgb(216, 202, 168)
 }
 
 .social ul{
@@ -147,6 +168,9 @@ footer {
   list-style: none;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+  padding-top: 3rem;
+  padding-right: 5rem;
 }
 
 i {
@@ -155,8 +179,20 @@ i {
   padding: 1rem;
   border-radius: 50%;
 }
+
+.social i:hover {
+  color: #C03A2A;
+  text-decoration: none;
+}
+
+.social i:visited {
+  color: rgb(216, 202, 168);
+  text-decoration: none;
+}
+
 .disclaimer {
   font-size: 1rem;
   text-align: center;
   color: rgb(64, 65, 30);
+  padding-top: 1rem;
 }
