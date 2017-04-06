@@ -3,7 +3,6 @@
 }
 
 html {
-
   position: absolute;
   width: 100%;
   padding: 0;
@@ -21,14 +20,12 @@ header {
   height: 20rem;
   margin: 0;
   padding: 1.5rem;
-
 }
 
 header h1 {
   font-size: 4rem;
   text-align: center;
 }
-
 
 .headernav {
   list-style: none;
@@ -52,14 +49,19 @@ nav {
   align-items: center;
 }
 
+
 .homeheader {
   display: block;
   text-align: center;
   vertical-align: center;
 }
+
 .homeheader h1 {
-  font-size: 7rem;
+  font-size: 3rem;
   color: rgb(216, 202, 168);
+  background-color: rgb(120, 119, 70);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 body {
@@ -82,7 +84,6 @@ img.col-lg-4 {
   color: rgb(64, 65, 30);
   text-align: center;
   height: 20rem;
-
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
@@ -91,7 +92,6 @@ img.col-lg-4 {
 .facility, .partnershipinfo {
   background-color: rgb(64, 65, 30);
   color: rgb(120, 119, 70);
-
 }
 
 .facility {
@@ -110,7 +110,6 @@ img.col-lg-4 {
 
 .row {
   padding: 1rem 1rem 1rem 1rem;
-
 }
 
 .partnershipinfo .partnerships {
@@ -123,6 +122,13 @@ img.col-lg-4 {
   font-size: 2rem;
   text-decoration: underline;
   font-weight: bold;
+}
+
+div.questionsrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer {
@@ -148,8 +154,8 @@ ul.footernav {
   border-radius: 10%;
   margin-right: 1rem;
   color: rgb(216, 202, 168);
-
 }
+
 .footernav a:visited {
   color: rgb(216, 202, 168);
 }
@@ -165,6 +171,7 @@ ul.contact {
   align-items: center;
   padding-top: 2rem;
 }
+
 .contact li{
   list-style: none;
   line-height: normal;
@@ -205,6 +212,13 @@ i {
   text-align: center;
   color: rgb(64, 65, 30);
   padding-top: 1rem;
+}
+
+div.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*-----------------------------Class page specific code----------------------------*/
@@ -296,4 +310,15 @@ h2.classes {
 .price {
   background-color: rgb(64, 65, 30);
   color: rgb(120, 119, 70);
+}
+
+h4.questions {
+  color: rgb(216, 202, 168);
+  margin-bottom: 2rem;
+}
+
+.questions i {
+  background-color: #C03A2A;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
