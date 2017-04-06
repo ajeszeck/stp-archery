@@ -53,18 +53,27 @@ nav {
   align-items: center;
 }
 
+.homeheader {
+  display: block;
+  text-align: center;
+  vertical-align: center;
+}
+.homeheader h1 {
+  font-size: 7rem;
+  color: rgb(216, 202, 168);
+}
+
 body {
   font-family: 'Oswald', sans-serif;
-  background-color: rgb(216, 202, 168);
+  background-color: black;
   margin: 0;
-  top: 0;
+  top: -8rem;
   left: 0;
-
 }
 
 img.col-lg-4 {
   border-radius: 5%;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .facility, .missionstatement, .partnershipinfo {
@@ -139,6 +148,7 @@ ul.footernav {
   padding: 1rem;
   border-radius: 10%;
   margin-right: 1rem;
+  color: rgb(216, 202, 168);
 
 }
 .footernav a:visited {
@@ -198,39 +208,43 @@ i {
   padding-top: 1rem;
 }
 
-/*-----------------------------Class specific code----------------------------*/
+/*-----------------------------Class page specific code----------------------------*/
 
-/*.classesheader {
-  display: flex;
-  justify-content: center;
-
-}*/
+.classes .row {
+  padding: 0;
+}
 
 h2.classes {
-  display: block;
-  margin: auto;
-  font-size: 6rem;
-  text-decoration: underline;
+  background-color: rgb(120, 119, 70);
+  color: rgb(64, 65, 30);
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 5rem;
 }
 
 .names {
   background-color: rgb(120, 119, 70);
+  color: rgb(64, 65, 30);
+  text-decoration: underline;
 }
 
 .classes {
   text-align: center;
-
 }
 
 .pictures {
   background-color: rgb(64, 65, 30);
 }
 
+.classpic {
+  width: 100%;
+  border-radius: 10%;
+}
+
 .descriptions {
   background-color: rgb(120, 119, 70);
   color: rgb(64, 65, 30);
 }
-
 
 .schedule {
   background-color: rgb(64, 65, 30);
@@ -248,10 +262,39 @@ h2.classes {
   border-radius: 10%;
   padding: 1rem;
   text-align: center;
-
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .roundbutton:hover {
   color: black;
   text-decoration: none;
+}
+
+.privateclasses {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.privateclasses h2 {
+  background-color: rgb(120, 119, 70);
+  color: rgb(64, 65, 30);
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.privateofferings {
+  background-color: rgb(64, 65, 30);
+  color: rgb(120, 119, 70);
+}
+
+.about {
+  background-color: rgb(120, 119, 70);
+  color: rgb(64, 65, 30);
+}
+
+.price {
+  background-color: rgb(64, 65, 30);
+  color: rgb(120, 119, 70);
 }
