@@ -1,3 +1,11 @@
+:root {
+  --light-green: rgb(120, 119, 70);
+  --dark-green: rgb(64, 65, 30);
+  --sand: rgb(216, 202, 168);
+  --red-buttons: #C03A2A;
+  --main-font: 'Oswald', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,8 +23,8 @@ html {
 }
 
 header {
-  background-color: rgb(64, 65, 30);
-  color: rgb(120, 119, 70);
+  background-color: var(--dark-green);
+  color: var(--light-green);
   height: 20rem;
   margin: 0;
   padding: 1.5rem;
@@ -37,6 +45,32 @@ header h1 {
 .navimg {
   border-radius: 50%;
 }
+
+.navbutton {
+  background: var(--red-buttons);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.navbutton a {
+  color: var(--sand);
+}
+
+.navbutton a:hover {
+  color: var(--dark-green);
+  text-decoration: none;
+}
+
+.navbutton a.active {
+  color: var(--dark-green);
+  text-decoration: none;
+}
+
 
 nav {
   display: block;
@@ -61,8 +95,8 @@ nav {
 
 .homeheader h1 {
   font-size: 3rem;
-  color: rgb(216, 202, 168);
-  background-color: rgb(120, 119, 70);
+  color: var(--sand);
+  background-color: var(--light-green);
   padding-top: 1rem;
   padding-bottom: 1rem;
 
@@ -78,15 +112,15 @@ body {
 }
 
 img.col-lg-4 {
-  border-radius: 5%;
+  /* border-radius: 5%; */
   margin-bottom: 1rem;
 }
 
 .facility, .missionstatement, .partnershipinfo {
   display: flex;
-  background-color: rgb(120, 119, 70);
+  background-color: var(--light-green);
   margin-bottom: 1.5rem;
-  color: rgb(64, 65, 30);
+  color: var(--dark-green);
   text-align: center;
   height: 20rem;
   justify-content: center;
@@ -95,8 +129,8 @@ img.col-lg-4 {
 }
 
 .facility, .partnershipinfo {
-  background-color: rgb(64, 65, 30);
-  color: rgb(120, 119, 70);
+  background-color: var(--dark-green);
+  color: var(--light-green);
 }
 
 .facility {
@@ -110,7 +144,7 @@ img.col-lg-4 {
 
 .missionstatement .owner {
   font-size: 1.5rem;
-  color: rgb(64, 65, 30);
+  color: var(--dark-green);
 }
 
 .row {
@@ -137,7 +171,7 @@ div.questionsrow {
 }
 
 footer {
-  background-color: rgb(120, 119, 70);
+  background-color: var(--light-green);
   bottom: 0;
   align-items: center;
   width: 100%;
@@ -149,7 +183,7 @@ ul.footernav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: rgb(216, 202, 168);
+  color: var(--sand);
   padding-top: 4rem;
 }
 
@@ -158,11 +192,11 @@ ul.footernav {
   padding: 1rem;
   border-radius: 10%;
   margin-right: 1rem;
-  color: rgb(216, 202, 168);
+  color: var(--sand);
 }
 
 .footernav a:visited {
-  color: rgb(216, 202, 168);
+  color: var(--sand);
 }
 
 .footernav a:hover {
@@ -182,7 +216,7 @@ ul.contact {
   line-height: normal;
   text-wrap: wrap;
   font-weight: bolder;
-  color: rgb(216, 202, 168);
+  color: var(--sand);
 }
 
 .social ul{
@@ -197,7 +231,7 @@ ul.contact {
 
 i {
   background-color: black;
-  color: rgb(216, 202, 168);
+  color: var(--sand);
   padding: 1rem;
   border-radius: 50%;
 }
@@ -208,14 +242,14 @@ i {
 }
 
 .social i:visited {
-  color: rgb(216, 202, 168);
+  color: var(--sand);
   text-decoration: none;
 }
 
 .disclaimer {
   font-size: 1rem;
   text-align: center;
-  color: rgb(64, 65, 30);
+  color: var(--dark-green);
   padding-top: 1rem;
 }
 
@@ -236,16 +270,16 @@ div.contact {
 }
 
 h2.classes {
-  background-color: rgb(120, 119, 70);
-  color: rgb(216, 202, 168);
+  background-color: var(--light-green);
+  color: var(--sand);
   padding: 1rem;
   text-decoration: none;
   font-size: 3rem;
 }
 
 .names {
-  background-color: rgb(120, 119, 70);
-  color: rgb(64, 65, 30);
+  background-color: var(--light-green);
+  color: var(--dark-green);
   text-decoration: underline;
   padding-bottom: 1rem;
 }
@@ -255,32 +289,32 @@ h2.classes {
 }
 
 .pictures {
-  background-color: rgb(64, 65, 30);
+  background-color: var(--dark-green);
 }
 
 .classpic {
   width: 100%;
-  border-radius: 10%;
+  /* border-radius: 10%; */
 }
 
 .descriptions {
-  background-color: rgb(120, 119, 70);
-  color: rgb(64, 65, 30);
+  background-color: var(--light-green);
+  color: var(--dark-green);
   padding-top: 2rem;
 }
 
 .schedule {
-  background-color: rgb(64, 65, 30);
-  color: rgb(120, 119, 70);
+  background-color: var(--dark-green);
+  color: var(--light-green);
 }
 
 .cost {
-  background-color: rgb(120, 119, 70);
-  color: rgb(64, 65, 30);
+  background-color: var(--light-green);
+  color: var(--dark-green);
 }
 
 .roundbutton {
-  color: rgb(216, 202, 168);
+  color: var(--sand);
   background-color: #C03A2A;
   border-radius: 10%;
   padding: 1rem;
@@ -301,29 +335,29 @@ h2.classes {
 }
 
 .privateclasses h2 {
-  background-color: rgb(120, 119, 70);
-  color: rgb(64, 65, 30);
+  background-color: var(--light-green);
+  color: var(--dark-green);
   padding: 1rem;
   text-decoration: none;
 }
 
 .privateofferings {
-  background-color: rgb(64, 65, 30);
-  color: rgb(120, 119, 70);
+  background-color: var(--dark-green);
+  color: var(--light-green);
 }
 
 .about {
-  background-color: rgb(120, 119, 70);
-  color: rgb(64, 65, 30);
+  background-color: var(--light-green);
+  color: var(--dark-green);
 }
 
 .price {
-  background-color: rgb(64, 65, 30);
-  color: rgb(120, 119, 70);
+  background-color: var(--dark-green);
+  color: var(--light-green);
 }
 
 h4.questions {
-  color: rgb(216, 202, 168);
+  color: var(--sand);
   margin-bottom: 2rem;
 }
 
